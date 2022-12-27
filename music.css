@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Rubik+Gemstones&display=swap');
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    /*background-color: black;*/
+    color: white;
+}
+
+nav ul li{
+    padding: 0 16px;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+.brand img{
+    width: 34px;
+    padding: 0 8px;
+    border-radius: 45px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Rubik Gemstones', cursive;
+    color: rgba(255,255,255,1);
+
+}
+
+.container{
+    min-height: 72vh;
+    color: #66461f;
+    font-family: 'IBM Plex Mono', monospace;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 50px;
+    /*background-color: black;*/
+    color: #E88E1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+    color: #5a5336;
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+.fa-play-circle:hover{
+    color: #Ceb75f;
+
+}
+.fa-pause-circle:hover{
+    color: #D2b548;
+
+}
+.fa-step-backward:hover{
+    color: #Eed679;
+}
+.fa-step-forward:hover{
+    color: #Bbac74;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    /*background-color: white;*/
+        /*color: black;*/
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 5px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }
+
+
+
+  
